@@ -1,0 +1,125 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+
+}
+a:hover { text-decoration: none }
+
+.section-padding {
+    padding: 80px 0px;
+}
+p {
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+/* Main Css */
+
+.single-team-img {
+    position:  relative;
+    width:  100%;
+    height:  100%;
+}
+.team-img-hover {
+    position:  absolute;
+    top:  0;
+    left:  0;
+    width:  100%;
+    height:  100%;
+    z-index: 1;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+.team-img-hover:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #EDEDED;
+    content: "";
+    opacity: .9;
+    z-index: -1;
+}
+.team-img-hover-inner {
+    display: table;
+    width: 100%;
+    height: 100%
+}
+.team-img-hover-wrap {
+    display: table-cell;
+    vertical-align: middle;
+    color: #777;
+}
+.team-img-hover-wrap h3 {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+
+}
+.team-img-hover-wrap p {
+    margin: 30px;
+
+}
+.team-box-social {}
+.team-box-social a {
+    display: inline-block;
+    font-size: 14px;
+    padding: 3px 7px;
+    color: rgba(0,0,0, .4);
+    transition: .3s;
+}
+.team-box-social a:hover {
+    color: #000;
+}
+.single-team-box:hover .team-img-hover {
+    visibility: visible;
+    opacity: 1;
+}
+.single-team-box h2 span {
+    display: block;
+    font-size: 12px;
+    margin-top: 10px;
+    color: #aaa;
+}
+.single-team-box {
+    overflow: hidden;
+}
+.single-team-box h2 {
+    font-size: 15px;
+    letter-spacing: .4em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 15px;
+    color: #777;
+}
+
+
